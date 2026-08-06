@@ -1,0 +1,4012 @@
+[
+  {
+    "sample_token": "dc676572_v01",
+    "frame_dir": "data/scenarios/normalized/dc676572_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Stays in place | Driving normally (no brake lamp) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v02",
+    "frame_dir": "data/scenarios/normalized/dc676572_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Stays in place | Driving normally (no brake lamp) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v03",
+    "frame_dir": "data/scenarios/normalized/dc676572_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Walking toward road | Driving normally (no brake lamp) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v04",
+    "frame_dir": "data/scenarios/normalized/dc676572_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Walking toward road | Braking (brake lamp on) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v05",
+    "frame_dir": "data/scenarios/normalized/dc676572_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Walking toward road | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v06",
+    "frame_dir": "data/scenarios/normalized/dc676572_v06",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Running toward road, near curb | Driving normally (no brake lamp) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v07",
+    "frame_dir": "data/scenarios/normalized/dc676572_v07",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Running toward road, near curb | Driving normally (no brake lamp) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v08",
+    "frame_dir": "data/scenarios/normalized/dc676572_v08",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Running toward road, near curb | Braking (brake lamp on) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v09",
+    "frame_dir": "data/scenarios/normalized/dc676572_v09",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Stays in place | Running toward road, near curb | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v10",
+    "frame_dir": "data/scenarios/normalized/dc676572_v10",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Stays in place | Driving normally (no brake lamp) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v11",
+    "frame_dir": "data/scenarios/normalized/dc676572_v11",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Stays in place | Driving normally (no brake lamp) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v12",
+    "frame_dir": "data/scenarios/normalized/dc676572_v12",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Stays in place | Braking (brake lamp on) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v13",
+    "frame_dir": "data/scenarios/normalized/dc676572_v13",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Stays in place | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v14",
+    "frame_dir": "data/scenarios/normalized/dc676572_v14",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Walking toward road | Driving normally (no brake lamp) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v15",
+    "frame_dir": "data/scenarios/normalized/dc676572_v15",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Walking toward road | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v16",
+    "frame_dir": "data/scenarios/normalized/dc676572_v16",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Running toward road, near curb | Driving normally (no brake lamp) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v17",
+    "frame_dir": "data/scenarios/normalized/dc676572_v17",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Running toward road, near curb | Driving normally (no brake lamp) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v18",
+    "frame_dir": "data/scenarios/normalized/dc676572_v18",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Running toward road, near curb | Driving normally (no brake lamp) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v19",
+    "frame_dir": "data/scenarios/normalized/dc676572_v19",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Walking toward road | Running toward road, near curb | Braking (brake lamp on) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v20",
+    "frame_dir": "data/scenarios/normalized/dc676572_v20",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Stays in place | Braking (brake lamp on) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v21",
+    "frame_dir": "data/scenarios/normalized/dc676572_v21",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Stays in place | Braking (brake lamp on) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v22",
+    "frame_dir": "data/scenarios/normalized/dc676572_v22",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Stays in place | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v23",
+    "frame_dir": "data/scenarios/normalized/dc676572_v23",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Walking toward road | Driving normally (no brake lamp) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v24",
+    "frame_dir": "data/scenarios/normalized/dc676572_v24",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Walking toward road | Braking (brake lamp on) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v25",
+    "frame_dir": "data/scenarios/normalized/dc676572_v25",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Walking toward road | Braking (brake lamp on) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v26",
+    "frame_dir": "data/scenarios/normalized/dc676572_v26",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Running toward road, near curb | Driving normally (no brake lamp) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v27",
+    "frame_dir": "data/scenarios/normalized/dc676572_v27",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Running toward road, near curb | Driving normally (no brake lamp) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v28",
+    "frame_dir": "data/scenarios/normalized/dc676572_v28",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Running toward road, near curb | Braking (brake lamp on) | Green | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v29",
+    "frame_dir": "data/scenarios/normalized/dc676572_v29",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Running toward road, near curb | Braking (brake lamp on) | Yellow | Ground truth speed"
+  },
+  {
+    "sample_token": "dc676572_v30",
+    "frame_dir": "data/scenarios/normalized/dc676572_v30",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 1.919,
+        "y": -0.006
+      },
+      {
+        "x": 3.601,
+        "y": -0.002
+      },
+      {
+        "x": 4.736,
+        "y": 0.003
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -7.939,
+        "y": 0.057
+      },
+      {
+        "x": -5.156,
+        "y": 0.029
+      },
+      {
+        "x": -2.189,
+        "y": 0.007
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 3.838,
+      "speed_2_mps": 3.364,
+      "speed_3_mps": 2.27,
+      "avg_speed_mps": 3.157,
+      "avg_speed_kph": 11.4,
+      "acceleration_mps2": -1.568,
+      "angle_1_rad": -0.0031,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0024,
+      "angle_2_deg": 0.14,
+      "angle_3_rad": 0.0044,
+      "angle_3_deg": 0.25,
+      "angle_overall_rad": 0.0006,
+      "angle_overall_deg": 0.04,
+      "yaw_rate_rad_s": 0.0075,
+      "yaw_rate_deg_s": 0.43,
+      "direction_label": "going straight",
+      "speed_label": "driving slowly",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "ego_goal": "continue straight along the current road",
+      "location": "singapore-onenorth",
+      "city": "Singapore",
+      "country": "Singapore",
+      "drive_side": "left"
+    },
+    "prev_continuous": {},
+    "ego_goal": "continue straight along the current road",
+    "scenario_text": "Running toward road, near curb | Running toward road, near curb | Braking (brake lamp on) | Red | Ground truth speed"
+  },
+  {
+    "sample_token": "6dabc0fb_v01",
+    "frame_dir": "data/scenarios/normalized/6dabc0fb_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "6dabc0fb_v02",
+    "frame_dir": "data/scenarios/normalized/6dabc0fb_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "6dabc0fb_v03",
+    "frame_dir": "data/scenarios/normalized/6dabc0fb_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "6dabc0fb_v04",
+    "frame_dir": "data/scenarios/normalized/6dabc0fb_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "6dabc0fb_v05",
+    "frame_dir": "data/scenarios/normalized/6dabc0fb_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "37535cd3_v01",
+    "frame_dir": "data/scenarios/normalized/37535cd3_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "37535cd3_v02",
+    "frame_dir": "data/scenarios/normalized/37535cd3_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "37535cd3_v03",
+    "frame_dir": "data/scenarios/normalized/37535cd3_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "37535cd3_v04",
+    "frame_dir": "data/scenarios/normalized/37535cd3_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "37535cd3_v05",
+    "frame_dir": "data/scenarios/normalized/37535cd3_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "3ffc4360_v01",
+    "frame_dir": "data/scenarios/normalized/3ffc4360_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "3ffc4360_v02",
+    "frame_dir": "data/scenarios/normalized/3ffc4360_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "3ffc4360_v03",
+    "frame_dir": "data/scenarios/normalized/3ffc4360_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "3ffc4360_v04",
+    "frame_dir": "data/scenarios/normalized/3ffc4360_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "3ffc4360_v05",
+    "frame_dir": "data/scenarios/normalized/3ffc4360_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "b8766f42_v01",
+    "frame_dir": "data/scenarios/normalized/b8766f42_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "b8766f42_v02",
+    "frame_dir": "data/scenarios/normalized/b8766f42_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "b8766f42_v03",
+    "frame_dir": "data/scenarios/normalized/b8766f42_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "b8766f42_v04",
+    "frame_dir": "data/scenarios/normalized/b8766f42_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "b8766f42_v05",
+    "frame_dir": "data/scenarios/normalized/b8766f42_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "e9a1c915_v01",
+    "frame_dir": "data/scenarios/normalized/e9a1c915_v01",
+    "n_past": 2,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "e9a1c915_v02",
+    "frame_dir": "data/scenarios/normalized/e9a1c915_v02",
+    "n_past": 2,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "e9a1c915_v03",
+    "frame_dir": "data/scenarios/normalized/e9a1c915_v03",
+    "n_past": 2,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "e9a1c915_v04",
+    "frame_dir": "data/scenarios/normalized/e9a1c915_v04",
+    "n_past": 2,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "e9a1c915_v05",
+    "frame_dir": "data/scenarios/normalized/e9a1c915_v05",
+    "n_past": 2,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "27900b9c_v01",
+    "frame_dir": "data/scenarios/normalized/27900b9c_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "27900b9c_v02",
+    "frame_dir": "data/scenarios/normalized/27900b9c_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "27900b9c_v03",
+    "frame_dir": "data/scenarios/normalized/27900b9c_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "27900b9c_v04",
+    "frame_dir": "data/scenarios/normalized/27900b9c_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "27900b9c_v05",
+    "frame_dir": "data/scenarios/normalized/27900b9c_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "47188ae2_v01",
+    "frame_dir": "data/scenarios/normalized/47188ae2_v01",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "47188ae2_v02",
+    "frame_dir": "data/scenarios/normalized/47188ae2_v02",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "47188ae2_v03",
+    "frame_dir": "data/scenarios/normalized/47188ae2_v03",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "47188ae2_v04",
+    "frame_dir": "data/scenarios/normalized/47188ae2_v04",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  },
+  {
+    "sample_token": "47188ae2_v05",
+    "frame_dir": "data/scenarios/normalized/47188ae2_v05",
+    "n_past": 3,
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0,
+      "direction_label": "going straight",
+      "speed_label": "not moving",
+      "drivelm_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "ego_goal": "remain stopped and wait",
+      "location": "boston-seaport",
+      "city": "Boston",
+      "country": "USA",
+      "drive_side": "right"
+    },
+    "prev_continuous": {},
+    "ego_goal": "remain stopped and wait",
+    "scenario_text": ""
+  }
+]

@@ -1,0 +1,107 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+The context header provides the ego vehicle's goal and past motion
+state. You also have access to the same images as Step 1 — use
+them to verify the traffic light state and object positions
+reported in A1–A5 if anything seems unclear or contradictory.
+
+The perception output below contains Q1–Q5 and A1–A5 from
+Step 1, followed by the perception summary.
+
+--- TRAFFIC RULES (apply strictly — these are not suggestions) ---
+  RED light    → ego must stop before the stop line; do not proceed
+  YELLOW light → ego must prepare to stop; do not accelerate;
+                 only proceed if stopping would be unsafe
+  GREEN light  → ego may proceed; yield to pedestrians in crosswalk
+-----------------------------------------------------------------
+
+Your task is to comprehend what the perceived scene means for the
+ego vehicle's goal. Work through the questions below in order.
+For each question, address every object from A1 explicitly —
+do not skip any.
+
+Q6: For each object in A1, decide whether it is directly relevant
+    to the ego vehicle's goal right now. State "relevant" or
+    "not relevant" and give one concrete reason why — based on
+    its position (A2), state (A3), and facing direction (A4).
+
+Q7: For each object you marked "relevant" in A6, answer two things
+    on one line:
+    (i)  Effect — choose ONE:
+         - "supports goal" — object actively helps the ego proceed
+         - "hinders goal"  — object blocks, slows, or requires the
+                             ego to actively respond
+    (ii) Confidence — choose ONE:
+         - "high" — the effect is determined by a fixed, observable
+                    property (e.g. signal is red, vehicle is stopped
+                    directly ahead, speed = 0)
+         - "low"  — the effect depends on a future action or decision
+                    that has not yet occurred
+    If confidence is "low", name the specific event that would
+    confirm or reverse the effect.
+    Include the property that determined the effect.
+
+Q8: From the relevant objects in A7, which ones represent a concern
+    that requires the ego to actively respond — not just be aware of?
+    For each concern, name the object and state the specific
+    threshold that makes it actionable
+    (e.g. "within 10m", "facing crosswalk", "signal is red").
+
+--- CONSISTENCY CHECK (complete before continuing to Q9) ---
+Review your A6–A8 answers against the ego vehicle's past behavior
+and motion state in the context header. The header is ground truth.
+If any of your answers imply the ego is stationary, slow, or
+obstructed but the header shows it moving at speed — correct the
+conflicting answer to match the header.
+------------------------------------------------------------
+
+Q9: Given the relevant objects and any concerns from A8, choose ONE
+    path status that describes the ego vehicle's situation right now.
+    These are mutually exclusive — pick the highest priority that
+    applies:
+    - "blocked"       — path cannot be continued as-is; ego must
+                        stop or reroute now
+    - "open, adjust"  — path is passable but ego must change speed
+                        or direction to proceed safely
+    - "open, monitor" — path is clear now but at least one object
+                        in A7 has low confidence and could change
+                        the safe action
+    - "open, proceed" — path is clear and no objects require
+                        active response
+    State which applies and name the object(s) that determined it.
+
+Respond in this EXACT format:
+
+Q6: Is each perceived object directly relevant to the ego vehicle's goal?
+A6:
+  1. <object from A1>: relevant / not relevant — <one-line reason>
+  2. <object from A1>: relevant / not relevant — <one-line reason>
+  (repeat for each object in A1)
+
+Q7: What is the effect and confidence level of each relevant object?
+A7:
+  1. <object>: supports goal / hinders goal — high / low confidence
+     — <specific property that determined the effect>
+     — <if low confidence: event that would confirm or reverse this>
+  2. <object>: supports goal / hinders goal — high / low confidence
+     — <specific property>
+     — <if low confidence: confirming/reversing event, else omit>
+  (repeat for each relevant object from A6)
+
+Q8: Which objects require active response — not just awareness?
+A8:
+  <object>: <actionable threshold>
+  (or "none" if no objects require active response)
+
+CONSISTENCY CHECK:
+<state whether any A6–A8 answers were corrected, and what was changed>
+
+Q9: What is the current path status of the ego vehicle?
+A9: <blocked / open, adjust / open, monitor / open, proceed>
+    — <object(s) that determined this>
+
+COMPREHENSION_SUMMARY: <one paragraph synthesizing A6, A7, A8,
+and A9 into a clear, goal-oriented situational assessment,
+written as if briefing a decision-maker>
+
+------------------------------------------------------------

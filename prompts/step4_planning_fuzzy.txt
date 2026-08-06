@@ -1,0 +1,112 @@
+You are an autonomous vehicle AI assistant.
+
+The context header provides the ego vehicle's goal and past motion
+state, including its past behavior label — the aggregated speed and
+direction over the past window leading to t0.
+
+The projection output below contains Q10-Q11 and A10-A11 from
+Step 3, followed by the projection summary.
+
+Your task is to select the best speed-direction combination for the
+ego vehicle over the next 1.5 seconds. Work through the questions
+below in order.
+
+Below is the list of physically reachable, scene-viable candidate
+pairs for this sample, each with a pre-computed cost value between
+0 and 1 (0 = identical to the past behavior baseline, 1 = maximally
+different from it). These costs were computed from the ego vehicle's
+actual continuous speed and heading, using calibrated category
+boundaries -- they already account for physical reachability and
+distance from baseline. Use these given values directly; do not
+recompute, re-estimate, or override them.
+
+[CANDIDATES_AND_COSTS]
+
+Q13 [Immediate cost — L term]:
+    The baseline is the past behavior label from the context header.
+    Copy it verbatim — do not rephrase or substitute it.
+
+    For each candidate listed above, state its given cost value and
+    explain in one line why that value makes sense given the
+    baseline and the scene. Your explanation must be consistent with
+    the actual number — do NOT use the words "low cost," "medium
+    cost," or "high cost." Instead, describe concretely what changed
+    from the baseline (e.g. "cost=0.05 — direction unchanged, speed
+    increased by one step" or "cost=0.82 — both direction and speed
+    changed substantially from the baseline").
+
+    Then eliminate any candidates that conflict with the scene
+    constraint rules below, even if their cost value is low.
+
+--- SCENE CONSTRAINT RULES (derive from A10 and A11 directly) ---
+Read A10 and A11 to determine which candidates are scene-viable.
+Apply these rules strictly:
+  - Any object with "conflict" in A11 eliminates all candidates that
+    would move the ego into that conflict
+  - A red traffic light in A10 means "not moving" is the ONLY
+    valid speed -- eliminate all candidates where speed is anything
+    other than "not moving"
+  - If the baseline speed is "not moving" (ego is stationary),
+    the only viable candidate is the baseline itself
+  - A "conditional" in A11 means those candidates are viable but
+    should be treated as carrying additional uncertainty on top of
+    their given cost value
+------------------------------------------------------------------
+
+Q14 [Future value -- lambda term]:
+    For each viable candidate remaining after Q13's elimination,
+    state how it propagates toward the ego vehicle's goal in the
+    next 1-2 seconds:
+    - "keeps options open"   -- ego can adjust further if needed
+    - "forecloses options"   -- ego commits to a path it cannot
+                               easily reverse
+    - "creates new conflict" -- candidate introduces a risk not in A11
+    Reference the specific projection from A10 or conflict from
+    A11 that supports each assessment.
+
+Q15 [Hamiltonian -- combined]:
+    For each viable candidate, compute total cost as its given cost
+    value (from Q13) plus a lambda penalty based on your Q14
+    assessment: add 0.0 for "keeps options open", add 0.3 for
+    "forecloses options", add 0.6 for "creates new conflict".
+    Choose the candidate with the LOWEST total cost. The chosen
+    candidate MUST be copied verbatim from the candidate list above.
+    Structure your answer as:
+    - Chosen pair:             <direction> + <speed> (copied verbatim)
+    - Given cost (L):          <the pre-computed cost value for this candidate>
+    - Lambda penalty:          <0.0 / 0.3 / 0.6, from Q14 assessment>
+    - Total cost:              <L + lambda penalty>
+    - Deviation from baseline: "none" if the pair matches the past
+                               behavior label, or one sentence
+                               explaining what in A10-A11 justifies
+                               the change if it differs.
+
+Respond in this EXACT format:
+
+Q13: What is the given cost of each candidate, and which remain scene-viable?
+A13:
+  Baseline: <copy the past behavior label verbatim from the context header>
+  Candidates:
+    - <direction> + <speed>: cost=<value> -- <one-line reason the value makes sense>
+    - <direction> + <speed>: cost=<value> -- <one-line reason the value makes sense>
+  Eliminated pairs:
+    - <direction> + <speed>: eliminated -- <one-line reason>
+  (write "none" if no pairs were eliminated)
+
+Q14: How does each viable candidate propagate toward the ego vehicle's goal over 1-2 seconds?
+A14:
+  - <direction> + <speed>: keeps options open / forecloses options /
+    creates new conflict -- <reference to A10 or A11>
+  (repeat for each viable candidate from A13)
+
+Q15: What is the single optimal candidate, weighing given cost and lambda penalty together?
+A15:
+  Chosen pair:              <direction> + <speed> -- copied verbatim from A13
+  Given cost (L):            <value from A13>
+  Lambda penalty:            <0.0 / 0.3 / 0.6>
+  Total cost:                <L + lambda penalty>
+  Deviation from baseline:   none / <one sentence justification>
+
+PLANNING: <direction> + <speed>
+
+------------------------------------------------------------

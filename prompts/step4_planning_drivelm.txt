@@ -1,0 +1,89 @@
+You are an autonomous vehicle AI assistant.
+
+The context header provides the ego vehicle's goal and past motion
+state, including its past behavior label.
+
+The projection output below contains Q10-Q11 and A10-A11 from
+Step 3, followed by the projection summary. Each object listed in
+A10 is a relevant object the ego vehicle must consider.
+
+The ego vehicle may choose any combination of:
+
+Speed:      not moving | driving slowly | driving with normal speed |
+            driving fast | driving very fast
+
+Direction:  going straight | slightly steering to the left |
+            slightly steering to the right | steering to the left |
+            steering to the right
+
+Your task is to reason about each relevant object individually,
+then determine the ego vehicle's recommended action. Work through
+the questions below in order.
+
+Q13: For each object listed in A10, is it something the ego
+    vehicle should actively consider when deciding its next
+    action? Answer "yes" or "no" for each object, with one-line
+    reasoning based on A10's projection and A11's conflict label.
+
+Q14: For each object marked "yes" in Q13, what action could the
+    ego vehicle take in response to it, why, and with what
+    probability? Choose ONE action per object from: continue at
+    current speed, accelerate, decelerate, stop, change direction
+    slightly, change direction sharply.
+    State the probability as high / medium / low, based on how
+    directly A11 supports this action (e.g. a "conflict" label
+    on a red light strongly supports "stop").
+
+Q15: For each object from Q14, what is the collision probability
+    with that object if the ego vehicle takes the action you
+    proposed? Answer high / medium / low, referencing A11's
+    conflict label for that object.
+
+Q16: Considering all objects together, translate your reasoning
+    from Q13-Q15 into a single Speed and Direction choice, each
+    copied verbatim from the two lists given near the top of this
+    prompt -- do not use the Q14/Q15 action vocabulary here.
+
+    Speed and Direction are independent fields and must both
+    always be filled from their own list: a stopped vehicle has
+    Speed = "not moving" AND a Direction from the direction list
+    (the direction it is facing or would continue in once moving
+    again, based on the past behavior label and A10-A11). Never
+    record "not moving" as a Direction value, and never leave
+    Direction blank because the vehicle is stationary.
+
+    Then state which objects from A10-A11 were most responsible
+    for this choice, in priority order (most important first).
+
+Respond in this EXACT format:
+
+Q13: For each object in A10, should the ego vehicle consider it?
+A13:
+  - <object from A10>: yes / no -- <one-line reason from A10/A11>
+  (repeat for each object in A10)
+
+Q14: What action, why, and with what probability for each considered object?
+A14:
+  - <object>: <action> -- <one-line reason> -- probability: high / medium / low
+  (repeat for each object marked "yes" in A13)
+
+Q15: What is the collision probability for each proposed action?
+A15:
+  - <object>: <action> -- collision probability: high / medium / low -- <reason from A11>
+  (repeat for each object from A14)
+
+Q16: What are the ego vehicle's Speed and Direction, and which objects determined them?
+A16:
+  Speed: <not moving / driving slowly / driving with normal speed /
+          driving fast / driving very fast>
+  Direction: <going straight / slightly steering to the left /
+              slightly steering to the right / steering to the left /
+              steering to the right -- never "not moving">
+  Priority objects: <object 1>, <object 2>, ... (most important first, or "none")
+
+PLANNING: <Direction> + <Speed>, copied verbatim from your A16 answer above
+           -- e.g. "going straight + not moving". Do NOT write a prose
+           sentence here -- this line must be exactly the Direction and
+           Speed values from A16, in that order, separated by " + ".
+
+------------------------------------------------------------
