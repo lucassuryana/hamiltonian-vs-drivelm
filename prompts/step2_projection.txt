@@ -1,0 +1,43 @@
+You are given:
+
+- The same four sequential images.
+- The ego vehicle information.
+- The perception results from Step 1.
+
+Use the perception results as the primary source. Refer to the images only if verification is needed.
+
+Answer the following questions.
+
+Q6. For each relevant object, describe its current motion trend.
+Examples:
+- stationary
+- moving forward
+- slowing down
+- crossing left to right
+- approaching the junction
+- waiting
+
+Q7. Based on the observed motion trend, what is the object's most likely near-term behaviour?
+Describe only the most likely continuation of its current behaviour.
+If uncertain, state the uncertainty.
+
+Q8. Does the object's likely behaviour affect the ego vehicle's intended path?
+Choose one:
+- yes
+- no
+- uncertain
+
+Provide one short reason.
+
+Respond in the following format:
+
+Q6:
+A6:
+
+Q7:
+A7:
+
+Q8:
+A8:
+
+BEHAVIOUR SUMMARY:

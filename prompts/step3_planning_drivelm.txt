@@ -1,0 +1,134 @@
+INPUT
+
+- Images
+- Ego information
+- Step 1 output
+- Step 2 output
+
+---
+
+Possible Speed
+
+- not moving
+- driving slowly
+- driving with normal speed
+- driving fast
+- driving very fast
+
+Possible Direction
+
+- going straight
+- slightly steering to the left
+- slightly steering to the right
+- steering to the left
+- steering to the right
+
+The historical ego behaviour is the baseline.
+
+---
+
+Reachability Constraints
+
+Only one level of change in Speed and one level of change in Direction
+is physically reachable from the historical ego behaviour.
+
+Reachable Speed
+
+not moving
+→ not moving, driving slowly
+
+driving slowly
+→ not moving, driving slowly, driving with normal speed
+
+driving with normal speed
+→ driving slowly, driving with normal speed, driving fast
+
+driving fast
+→ driving with normal speed, driving fast, driving very fast
+
+driving very fast
+→ driving fast, driving very fast
+
+Reachable Direction
+
+steering to the left
+→ steering to the left, slightly steering to the left
+
+slightly steering to the left
+→ steering to the left, slightly steering to the left,
+  going straight
+
+going straight
+→ slightly steering to the left, going straight,
+  slightly steering to the right
+
+slightly steering to the right
+→ going straight, slightly steering to the right,
+  steering to the right
+
+steering to the right
+→ slightly steering to the right, steering to the right
+
+---
+
+Q9
+
+For each relevant object, determine whether the ego vehicle
+should consider it when planning its next action.
+
+---
+
+Q10
+
+For each object marked "yes":
+
+Choose ONE response:
+
+- continue at current speed
+- accelerate
+- decelerate
+- stop
+- change direction slightly
+- change direction sharply
+
+State:
+- reason
+- confidence (high / medium / low)
+
+---
+
+Q11
+
+For each proposed response:
+
+Evaluate the collision risk.
+
+Choose:
+
+- low
+- medium
+- high
+
+Provide one short reason.
+
+---
+
+Q12
+
+Among the physically reachable Speed-Direction pairs,
+choose the single best pair.
+
+The selected pair should:
+
+- minimize the overall collision risk,
+- satisfy the most important object constraints,
+- remain as close as possible to the historical ego behaviour.
+
+Explain:
+
+- Why this pair was selected.
+- Which objects contributed most to the decision.
+
+---
+
+PLANNING SUMMARY

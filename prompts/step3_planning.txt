@@ -1,0 +1,50 @@
+You are given: 
+- The same four sequential images. 
+- The ego vehicle information. 
+- The perception results from Step 1. 
+- The behaviour assessment from Step 2. 
+
+Use the behaviour assessment as the primary source. Refer to the images only if verification is needed. 
+The ego vehicle may choose one combination of: 
+Speed: - not moving - driving slowly - driving with normal speed - driving fast - driving very fast 
+Direction: - going straight - slightly steering to the left - slightly steering to the right - steering to the left - steering to the right 
+
+Historical ego behaviour defines the baseline action. Answer the following questions.
+
+--------------------------------------------------
+Reachability Constraints
+[Keep exactly as you have]
+--------------------------------------------------
+Q9
+Generate physically reachable speed-direction pairs.
+--------------------------------------------------
+Q10
+Evaluate each reachable pair.
+- Is it compatible with the surrounding objects?
+- Eliminate unsafe pairs.
+- Briefly explain each elimination.
+--------------------------------------------------
+Q11
+For each remaining pair:
+Immediate Cost (L)
+- low
+- medium
+- high
+Future Value (λ)
+- keeps options open
+- forecloses options
+- creates new conflict
+--------------------------------------------------
+Q12
+Choose the optimal pair.
+Explain:
+- Why it minimizes L.
+- Why it provides the best λ.
+- Whether it deviates from the historical behaviour.
+--------------------------------------------------
+PLANNING SUMMARY:
+
+After PLANNING SUMMARY, you MUST end your response with exactly these two lines,
+copying the chosen labels verbatim from the lists above (do not paraphrase):
+FINAL SPEED: <one of the 5 speed choices, copied verbatim>
+FINAL DIRECTION: <one of the 5 direction choices, copied verbatim>
