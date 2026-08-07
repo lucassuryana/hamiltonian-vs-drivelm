@@ -2,19 +2,34 @@
 scripts/labels.py
 Single source of truth for DriveLM categorical labelling.
 
-Speed thresholds: empirical, derived from DriveLM ∩ nuScenes mini (n=38)
-                  via scripts/04_drivelm_label_stats.py.
-Direction thresholds: DriveLM-published y3 thresholds converted to angle
-                  equivalents at typical urban speed (5 m/s × 1.5 s = 7.5 m).
-                  Direction not empirically derivable from mini due to
-                  sparse coverage (only 2 of 5 classes populated).
+Speed thresholds: empirical, derived from DriveLM ∩ nuScenes v1.0-trainval
+                  (train split only -- val excluded, its answer field is
+                  withheld by the benchmark) via
+                  scripts/04b_drivelm_label_stats_full.py.
+                  n ≈ 3,857 labelled records (vs. n=38 in the original
+                  mini-based version).
+
+Direction thresholds: empirical for the right-side boundaries; the left-side
+                  boundaries are NOT independently derivable because DriveLM's
+                  behavior QA never uses the "slightly steering to the left"
+                  label at all (0 samples, confirmed at full scale, not a
+                  data-loading issue). Left-side boundaries are therefore set
+                  by ASSUMING LEFT/RIGHT SYMMETRY and mirroring the empirical
+                  right-side values. This is a stated assumption, not an
+                  independent empirical result for the left side -- flag this
+                  explicitly in the methods section if used for the paper.
+
+Full-data source stats: config/drivelm_label_stats_full.json
+Original mini-based stats (for comparison): config/drivelm_label_stats.json
 """
 import math
 
 # ── Speed thresholds on avg_speed_mps (m/s) ──────────────────────────
-# Empirical class boundaries from DriveLM ∩ nuScenes mini, n=38.
+# Empirical class boundaries from DriveLM ∩ nuScenes trainval, n≈3,857.
 # Each value is the boundary BELOW which the class applies.
-SPEED_THRESHOLDS_MPS = [1.21, 3.78, 6.23, 9.78]
+#
+# Previous (mini, n=38):  [1.21, 3.78, 6.23, 9.78]
+SPEED_THRESHOLDS_MPS = [1.073, 4.196, 6.152, 8.834]
 SPEED_LABELS = [
     'not moving',
     'driving slowly',
@@ -24,12 +39,20 @@ SPEED_LABELS = [
 ]
 
 # ── Direction thresholds on angle_overall_deg ────────────────────────
-# Derived from DriveLM-published y3 thresholds (±0.5 m, ±2.0 m) at the
-# typical 1.5-second horizon distance of 7.5 m:
-#   slight: |angle| > atan2(0.5, 7.5) = 3.81°
-#   full:   |angle| > atan2(2.0, 7.5) = 14.93°
-DIR_SLIGHT_DEG = math.degrees(math.atan2(0.5, 7.5))   # ≈ 3.81
-DIR_FULL_DEG   = math.degrees(math.atan2(2.0, 7.5))   # ≈ 14.93
+# Empirical (right side only, full data):
+#   going straight / slightly-right boundary:  -2.031 deg
+#   slightly-right / full-right boundary:      -8.495 deg
+# Left side has zero samples for "slightly steering to the left" in DriveLM's
+# behavior QA (confirmed at full scale) -- no empirical boundary derivable.
+# Mirrored from the right side under an assumed left/right symmetry:
+#
+# Previous (mini): DIR_SLIGHT_DEG ~= 3.81, DIR_FULL_DEG ~= 14.93
+#                   (geometric approximation from DriveLM's published y3
+#                   thresholds, not empirical -- mini had only 2/5 direction
+#                   classes populated)
+DIR_SLIGHT_DEG = 2.031   # empirical (right side), mirrored for left
+DIR_FULL_DEG   = 8.495   # empirical (right side), mirrored for left
+
 DIRECTION_LABELS = [
     'steering to the left',
     'slightly steering to the left',
