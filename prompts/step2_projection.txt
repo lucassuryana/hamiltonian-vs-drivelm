@@ -4,40 +4,115 @@ You are given:
 - The ego vehicle information.
 - The perception results from Step 1.
 
-Use the perception results as the primary source. Refer to the images only if verification is needed.
+Use the Step 1 perception results as the primary representation of the scene.
+
+Use the original images only to verify observations when necessary. Do not repeat the perception task.
 
 Answer the following questions.
 
-Q6. For each relevant object, describe its current motion trend.
-Examples:
-- stationary
-- moving forward
-- slowing down
-- crossing left to right
-- approaching the junction
-- waiting
+Q6. Which perceived objects require near-term prediction?
 
-Q7. Based on the observed motion trend, what is the object's most likely near-term behaviour?
-Describe only the most likely continuation of its current behaviour.
-If uncertain, state the uncertainty.
+For each object in A1, determine whether it requires prediction within the next 1.5 seconds.
 
-Q8. Does the object's likely behaviour affect the ego vehicle's intended path?
 Choose one:
-- yes
-- no
+
+- requires prediction
+- does not require prediction
 - uncertain
 
-Provide one short reason.
+Give one short reason based only on the current observations.
+
+---
+
+Q7. What is the current motion trend of each object?
+
+For each object marked "requires prediction" or "uncertain", describe its current observed motion trend.
+
+Examples:
+
+- stationary
+- moving forward
+- moving backward
+- slowing down
+- accelerating
+- crossing left to right
+- crossing right to left
+- approaching the junction
+- waiting
+- turning left
+- turning right
+
+Describe only the current observed trend.
+
+---
+
+Q8. What is the projected near-term behaviour of each object?
+
+For each object identified in Q6, project its most likely behaviour over the next 1.5 seconds.
+
+Use only the following prediction timesteps when meaningful:
+
+- t+0.5 s
+- t+1.0 s
+- t+1.5 s
+
+After the timestep predictions, summarize the object's most likely behaviour.
+
+If the prediction is uncertain, explicitly state the uncertainty rather than guessing.
+
+---
+
+Q9. How confident is each prediction?
+
+For each predicted object, report the prediction confidence.
+
+Choose one:
+
+- High — the current observations strongly support the predicted continuation.
+- Medium — the prediction is plausible, but another behaviour is also possible.
+- Low — the future behaviour depends on an uncertain decision or insufficient evidence.
+
+Provide one short reason for the confidence level.
+
+---
 
 Respond in the following format:
 
-Q6:
+Q6: Which perceived objects require near-term prediction?
 A6:
 
-Q7:
+1. <object name>: requires prediction / does not require prediction / uncertain — <reason>
+2.
+3.
+(repeat for every object in A1)
+
+Q7: What is the current motion trend of each object?
 A7:
 
-Q8:
+1. <object name>: <current motion trend>
+2.
+3.
+(repeat only for objects marked "requires prediction" or "uncertain")
+
+Q8: What is the projected near-term behaviour of each object?
 A8:
 
-BEHAVIOUR SUMMARY:
+[<object name>]:
+t+0.5 s: <predicted state>
+t+1.0 s: <predicted state>
+t+1.5 s: <predicted state>
+
+Most likely behaviour: <one concise sentence>
+
+(repeat for every predicted object)
+
+Q9: How confident is each prediction?
+A9:
+
+1. <object name>: High / Medium / Low — <one short reason>
+2.
+3.
+(repeat for every predicted object)
+
+PREDICTION_SUMMARY:
+<One objective paragraph summarizing the predicted behaviour of the relevant objects over the next 1.5 seconds. Describe only the predicted object behaviour and associated uncertainty. Do not assess conflicts with the ego vehicle and do not recommend any driving action.>

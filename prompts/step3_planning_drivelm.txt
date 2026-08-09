@@ -1,13 +1,20 @@
-INPUT
+STEP 3 — PLANNING
 
-- Images
-- Ego information
-- Step 1 output
-- Step 2 output
+You are given:
 
----
+- The same four sequential images.
+- The ego vehicle information.
+- The perception results from Step 1.
+- The prediction results from Step 2.
 
-Possible Speed
+Use the prediction results from Step 2 as the primary description of the near-term environment.
+
+Refer to the original images only when verification is necessary.
+Do not repeat the perception or prediction tasks.
+
+The ego vehicle may choose one combination of:
+
+Speed:
 
 - not moving
 - driving slowly
@@ -15,7 +22,7 @@ Possible Speed
 - driving fast
 - driving very fast
 
-Possible Direction
+Direction:
 
 - going straight
 - slightly steering to the left
@@ -23,66 +30,26 @@ Possible Direction
 - steering to the left
 - steering to the right
 
-The historical ego behaviour is the baseline.
+The historical ego behaviour defines the baseline action.
+
+Your task is to reason about each predicted object individually, then determine the ego vehicle's final Speed and Direction by considering all relevant objects together.
 
 ---
 
-Reachability Constraints
+Q13. For each object predicted in Step 2, should the ego vehicle actively consider it when planning its next action?
 
-Only one level of change in Speed and one level of change in Direction
-is physically reachable from the historical ego behaviour.
+Answer:
 
-Reachable Speed
+- yes
+- no
 
-not moving
-→ not moving, driving slowly
-
-driving slowly
-→ not moving, driving slowly, driving with normal speed
-
-driving with normal speed
-→ driving slowly, driving with normal speed, driving fast
-
-driving fast
-→ driving with normal speed, driving fast, driving very fast
-
-driving very fast
-→ driving fast, driving very fast
-
-Reachable Direction
-
-steering to the left
-→ steering to the left, slightly steering to the left
-
-slightly steering to the left
-→ steering to the left, slightly steering to the left,
-  going straight
-
-going straight
-→ slightly steering to the left, going straight,
-  slightly steering to the right
-
-slightly steering to the right
-→ going straight, slightly steering to the right,
-  steering to the right
-
-steering to the right
-→ slightly steering to the right, steering to the right
+Give one short reason based on the predicted behaviour and prediction confidence.
 
 ---
 
-Q9
+Q14. For each object marked "yes" in Q13, what response would most appropriately reduce the potential risk posed by that object?
 
-For each relevant object, determine whether the ego vehicle
-should consider it when planning its next action.
-
----
-
-Q10
-
-For each object marked "yes":
-
-Choose ONE response:
+Choose ONE:
 
 - continue at current speed
 - accelerate
@@ -91,44 +58,99 @@ Choose ONE response:
 - change direction slightly
 - change direction sharply
 
-State:
-- reason
-- confidence (high / medium / low)
+Briefly explain why.
+
+Then report your confidence:
+
+- high
+- medium
+- low
+
+The confidence should reflect how strongly the predicted behaviour supports the proposed response.
 
 ---
 
-Q11
+Q15. For each object from Q14, estimate the collision probability if the ego vehicle follows the proposed response for that object alone.
 
-For each proposed response:
-
-Evaluate the collision risk.
-
-Choose:
+Choose one:
 
 - low
 - medium
 - high
 
-Provide one short reason.
+Briefly explain the estimate using the predicted behaviour from Step 2.
+
+This question evaluates each object independently.
+Do not determine the final Speed or Direction yet.
 
 ---
 
-Q12
+Q16. Considering all relevant objects together, determine the ego vehicle's final Speed and Direction.
 
-Among the physically reachable Speed-Direction pairs,
-choose the single best pair.
+The chosen Speed and Direction must:
 
-The selected pair should:
+- be physically reachable from the historical ego behaviour;
+- remain as close as possible to the historical behaviour whenever safe;
+- minimize the overall collision risk;
+- satisfy the strongest planning constraints identified in Q13–Q15.
 
-- minimize the overall collision risk,
-- satisfy the most important object constraints,
-- remain as close as possible to the historical ego behaviour.
+Speed and Direction are independent fields and must both always be selected from the lists above.
 
-Explain:
+If the chosen Speed is "not moving", Direction should still describe the vehicle's heading.
+Never use "not moving" as a Direction.
 
-- Why this pair was selected.
-- Which objects contributed most to the decision.
+State the planning priority objects in descending order of influence on the final decision.
 
 ---
 
-PLANNING SUMMARY
+Respond in the following EXACT format.
+
+Q13: Which predicted objects should influence planning?
+A13:
+
+- <object>: yes / no — <reason>
+
+(repeat for every predicted object)
+
+---
+
+Q14: What response is appropriate for each planning-relevant object?
+A14:
+
+- <object>:
+  Response: <continue at current speed / accelerate / decelerate / stop / change direction slightly / change direction sharply>
+  Reason:
+  Confidence: high / medium / low
+
+(repeat for every object marked "yes")
+
+---
+
+Q15: What is the collision probability for each proposed response?
+A15:
+
+- <object>:
+  Collision probability: low / medium / high
+  Explanation:
+
+(repeat for every object from A14)
+
+---
+
+Q16: What are the ego vehicle's final Speed and Direction?
+A16:
+
+Speed:
+<not moving / driving slowly / driving with normal speed / driving fast / driving very fast>
+
+Direction:
+<going straight / slightly steering to the left / slightly steering to the right / steering to the left / steering to the right>
+
+Priority objects:
+<object 1>, <object 2>, ...
+
+PLANNING SUMMARY:
+<one concise paragraph explaining the final planning decision>
+
+FINAL SPEED: <copy the Speed from A16 exactly>
+FINAL DIRECTION: <copy the Direction from A16 exactly>

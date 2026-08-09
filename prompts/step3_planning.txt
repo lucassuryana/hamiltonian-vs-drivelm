@@ -1,50 +1,326 @@
-You are given: 
-- The same four sequential images. 
-- The ego vehicle information. 
-- The perception results from Step 1. 
-- The behaviour assessment from Step 2. 
+You are given:
 
-Use the behaviour assessment as the primary source. Refer to the images only if verification is needed. 
-The ego vehicle may choose one combination of: 
-Speed: - not moving - driving slowly - driving with normal speed - driving fast - driving very fast 
-Direction: - going straight - slightly steering to the left - slightly steering to the right - steering to the left - steering to the right 
+- The same four sequential images.
+- The ego vehicle information.
+- The perception results from Step 1.
+- The prediction results from Step 2.
 
-Historical ego behaviour defines the baseline action. Answer the following questions.
+Use the prediction results from Step 2 as the primary description of the near-term environment.
 
---------------------------------------------------
-Reachability Constraints
-[Keep exactly as you have]
---------------------------------------------------
-Q9
-Generate physically reachable speed-direction pairs.
---------------------------------------------------
-Q10
-Evaluate each reachable pair.
-- Is it compatible with the surrounding objects?
-- Eliminate unsafe pairs.
-- Briefly explain each elimination.
---------------------------------------------------
-Q11
-For each remaining pair:
-Immediate Cost (L)
-- low
-- medium
-- high
-Future Value (λ)
+Refer to the original images only when verification is necessary.
+Do not repeat the perception or prediction tasks.
+
+The ego vehicle may choose one combination of:
+
+Speed:
+- not moving
+- driving slowly
+- driving with normal speed
+- driving fast
+- driving very fast
+
+Direction:
+- going straight
+- slightly steering to the left
+- slightly steering to the right
+- steering to the left
+- steering to the right
+
+Evaluate candidates as combined speed-direction pairs.
+
+The historical ego behaviour from the ego information defines the baseline action.
+
+============================================================
+PHYSICAL REACHABILITY
+============================================================
+
+Only one level of change in speed and one level of change in direction are physically reachable within the next 1.5 seconds.
+
+Reachable speeds:
+
+not moving
+→ not moving, driving slowly
+
+driving slowly
+→ not moving, driving slowly, driving with normal speed
+
+driving with normal speed
+→ driving slowly, driving with normal speed, driving fast
+
+driving fast
+→ driving with normal speed, driving fast, driving very fast
+
+driving very fast
+→ driving fast, driving very fast
+
+
+Reachable directions:
+
+steering to the left
+→ steering to the left, slightly steering to the left
+
+slightly steering to the left
+→ steering to the left, slightly steering to the left, going straight
+
+going straight
+→ slightly steering to the left, going straight, slightly steering to the right
+
+slightly steering to the right
+→ going straight, slightly steering to the right, steering to the right
+
+steering to the right
+→ slightly steering to the right, steering to the right
+
+
+The baseline must match the historical ego behaviour exactly.
+Do not modify the baseline based on the scene.
+
+============================================================
+PLANNING PRINCIPLES
+============================================================
+
+1. Planning is performed over candidate ego actions.
+
+2. Conflict is candidate-specific.
+
+A predicted object is not automatically a conflict.
+
+For each candidate pair, determine whether that candidate's expected motion would interact unsafely with the predicted behaviour of each relevant object.
+
+3. Unsafe candidates are eliminated before evaluating future value.
+
+4. Prediction uncertainty must not be added to the immediate cost L.
+
+5. Immediate cost L measures only deviation from the historical ego behaviour.
+
+6. Future value lambda describes how a viable candidate affects the ego vehicle's future ability to continue safely toward its goal.
+
+============================================================
+Q9 — PLANNING RELEVANCE
+============================================================
+
+Q9. Which predicted objects should influence the ego vehicle's planning?
+
+For each object predicted in Step 2, choose:
+
+- yes
+- no
+
+Answer "yes" if the object's predicted behaviour could affect the safety or feasibility of at least one reachable ego candidate within the next 1.5 seconds.
+
+Give one short reason.
+
+============================================================
+Q10 — REACHABILITY AND IMMEDIATE COST L
+============================================================
+
+Q10. What are the physically reachable candidate speed-direction pairs?
+
+First:
+
+1. Read the historical ego speed and direction from the ego information.
+2. Copy them exactly as the baseline.
+3. Use the reachability tables above to generate all physically reachable speed-direction pairs.
+
+The candidate set may contain at most 9 pairs.
+
+For every reachable pair, assign its immediate cost L based ONLY on distance from the baseline:
+
+- low cost
+  = same speed AND same direction as the baseline
+
+- medium cost
+  = one level away in speed OR one level away in direction
+
+- high cost
+  = one level away in BOTH speed and direction
+
+Only one candidate can have low cost.
+
+Do not use scene risk, object uncertainty, or predicted conflicts when assigning L.
+
+============================================================
+Q11 — CANDIDATE-SPECIFIC CONFLICT AND FUTURE VALUE LAMBDA
+============================================================
+
+Q11. How does each physically reachable candidate interact with the predicted environment?
+
+For every candidate from Q10:
+
+Step A — Candidate-specific interaction
+
+Compare the candidate against every object marked "yes" in Q9.
+
+Use the predicted object behaviour and prediction confidence from Step 2.
+
+For each object, classify the interaction as:
+
+- no conflict
+- conditional
+- conflict
+
+Definitions:
+
+no conflict
+= the candidate's expected motion does not interfere with the predicted object behaviour within the planning horizon
+
+conditional
+= conflict depends on uncertain object behaviour or uncertain temporal/spatial overlap
+
+conflict
+= the candidate would move the ego into an unsafe interaction with the predicted object behaviour
+
+Briefly explain each classification.
+
+Step B — Candidate safety
+
+Based on all object interactions, classify the candidate as:
+
+- viable
+- conditional
+- unsafe
+
+Use:
+
+viable
+= no relevant object creates a conflict
+
+conditional
+= no confirmed conflict, but at least one relevant interaction remains uncertain
+
+unsafe
+= at least one relevant object creates a confirmed conflict
+
+Eliminate unsafe candidates.
+
+Step C — Future value lambda
+
+For every candidate that remains viable or conditional, assign one future-value label:
+
 - keeps options open
 - forecloses options
 - creates new conflict
---------------------------------------------------
-Q12
-Choose the optimal pair.
-Explain:
-- Why it minimizes L.
-- Why it provides the best λ.
-- Whether it deviates from the historical behaviour.
---------------------------------------------------
-PLANNING SUMMARY:
 
-After PLANNING SUMMARY, you MUST end your response with exactly these two lines,
-copying the chosen labels verbatim from the lists above (do not paraphrase):
-FINAL SPEED: <one of the 5 speed choices, copied verbatim>
-FINAL DIRECTION: <one of the 5 direction choices, copied verbatim>
+Definitions:
+
+keeps options open
+= the ego retains the ability to adjust speed or direction further if the environment changes
+
+forecloses options
+= the candidate commits the ego to a state or path that is difficult to reverse within the next 1–2 seconds
+
+creates new conflict
+= the candidate introduces a new interaction risk that is not required by the current predicted environment
+
+Reference the specific predicted object behaviour that supports the lambda assessment.
+
+============================================================
+Q12 — HAMILTONIAN SELECTION
+============================================================
+
+Q12. What is the single optimal speed-direction pair?
+
+Consider only candidates that remain viable or conditional after Q11.
+
+Choose ONE candidate by weighing:
+
+- immediate cost L from Q10
+- future value lambda from Q11
+- candidate safety from Q11
+
+Selection rules:
+
+1. Never choose an unsafe candidate.
+
+2. Prefer a viable candidate over a conditional candidate when their L and lambda are otherwise comparable.
+
+3. Prefer:
+   keeps options open
+   over
+   forecloses options
+   over
+   creates new conflict.
+
+4. Among candidates with equivalent safety and future value, choose the one with the lowest L.
+
+5. Stay as close as possible to the historical ego behaviour whenever this remains safe and does not worsen future value.
+
+The chosen pair MUST be copied verbatim from the candidate pairs listed in Q10.
+
+Explain:
+
+- why the chosen pair is acceptable in terms of safety,
+- why it wins on L,
+- why it wins on lambda,
+- and whether it deviates from the historical baseline.
+
+============================================================
+OUTPUT FORMAT
+============================================================
+
+Q9: Which predicted objects should influence planning?
+A9:
+
+1. <object name>: yes / no — <reason>
+2. <object name>: yes / no — <reason>
+(repeat for every predicted object)
+
+Q10: What are the physically reachable candidate speed-direction pairs?
+A10:
+
+Baseline:
+<direction> + <speed>
+
+Candidate pairs:
+
+- <direction> + <speed>: low / medium / high cost — <reason>
+- <direction> + <speed>: low / medium / high cost — <reason>
+(repeat for every physically reachable candidate)
+
+Q11: How does each candidate interact with the predicted environment?
+A11:
+
+[<direction> + <speed>]
+
+Object interactions:
+- <object name>: no conflict / conditional / conflict — <reason>
+- <object name>: no conflict / conditional / conflict — <reason>
+
+Candidate safety:
+viable / conditional / unsafe
+
+Future value:
+keeps options open / forecloses options / creates new conflict
+
+Explanation:
+<short explanation>
+
+(repeat for every candidate from Q10)
+
+Eliminated candidates:
+- <direction> + <speed>: eliminated — <reason>
+(write "none" if no candidates are eliminated)
+
+Q12: What is the single optimal speed-direction pair?
+A12:
+
+Chosen pair:
+<direction> + <speed>
+
+Safety:
+<why the candidate is acceptable>
+
+Why it wins on L:
+<one line consistent with Q10>
+
+Why it wins on lambda:
+<one line consistent with Q11>
+
+Deviation from baseline:
+none / <short explanation>
+
+PLANNING SUMMARY:
+<one concise paragraph>
+
+FINAL SPEED: <one of the five speed labels exactly>
+FINAL DIRECTION: <one of the five direction labels exactly>

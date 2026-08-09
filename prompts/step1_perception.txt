@@ -1,32 +1,111 @@
-Answer the following questions using only observable evidence from the images unless the question explicitly refers to the ego information.
+Answer the following questions using only directly observable evidence from the images unless the question explicitly refers to the ego information.
+
+- Do not infer object intentions or future behaviour.
+- If an observation is uncertain, write "uncertain" rather than guessing.
+- If an object is not visible in a frame, write "not visible."
 
 Q1. What are the relevant dynamic objects in the scene?
-List at most five objects. Group nearby objects of the same type into one entry.
+
+List at most five dynamic objects that may affect the ego vehicle within the next few seconds.
+
+Group nearby objects of the same type into a single entry.
 
 Q2. Where is each object relative to the ego vehicle?
 
+Describe the current qualitative position of each object relative to the ego vehicle.
+
+Examples:
+
+close ahead
+far ahead
+left lane
+right lane
+left sidewalk
+right sidewalk
+junction
+
 Q3. Describe the observed state of each object in every available frame.
-If the object is not visible, write "not visible".
+
+For each object listed in A1, describe only what is observed in every available frame.
+
+Use only the timesteps provided in the image sequence.
+If the object is not visible in a frame, write "not visible."
+After listing the observations, report whether the object's observed state remained unchanged or changed based only on visible evidence.
+
+Do not infer future behaviour or object intentions.
 
 Q4. What is the current facing direction or movement direction of each object?
 
+Describe the current facing direction or movement direction based only on the images.
+
+Examples:
+- facing away
+- facing the ego vehicle
+- parallel to the road
+- moving left to right
+- moving right to left
+
 Q5. Based only on the ego information above, describe the ego vehicle's current motion state.
 
-Respond in the following format:
+Use only the ego information provided in the header.
 
-Q1:
+Report:
+- whether the ego vehicle is moving or stationary;
+- its heading direction; and
+- its acceleration state only if explicitly available in the ego information.
+
+If acceleration cannot be determined from the provided information, write:
+- Acceleration: Unknown
+
+OUTPUT FORMAT
+Q1: What are the relevant dynamic objects in the scene?
+
 A1:
+1.
+2.
+3.
+4.
+5. <object type and location, or "none" if fewer than five objects>
 
-Q2:
+Q2: Where is each object relative to the ego vehicle?
+
 A2:
+1. <qualitative position>
+2.
+3. 
+(repeat for every object in A1)
 
-Q3:
+Q3: Describe the observed state of each object in every available frame.
+
 A3:
 
-Q4:
+[<object name>]
+
+t-X: <observed state or "not visible">
+t-Y: <observed state or "not visible">
+t0: <observed state or "not visible">
+
+Observed change: <unchanged / describe the observed change>
+
+(repeat for every object in A1 using only the available timesteps)
+
+Q4: What is the current facing direction or movement direction of each object?
+
 A4:
+1. <facing or movement direction>
+2. 
+3. 
+(repeat for every object in A1)
 
-Q5:
+Q5: What is the ego vehicle's current motion state?
+
 A5:
+- Motion state: <moving / stationary>
+- Heading direction: <direction>
+- Acceleration: <accelerating / braking / neither / unknown>
 
-PERCEPTION SUMMARY:
+PERCEPTION SUMMARY
+
+Provide one objective paragraph summarizing the currently observed scene based on A1–A5.
+
+Do not predict future behaviour or recommend any driving action.
