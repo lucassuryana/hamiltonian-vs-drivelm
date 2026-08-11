@@ -12,13 +12,29 @@ Answer the following questions.
 
 Q6. Which perceived objects require near-term prediction?
 
-For each object in A1, determine whether it requires prediction within the next 1.5 seconds.
+For each object in A1, determine whether its future position or state
+within the next 1.5 seconds needs to be estimated in order to evaluate
+the ego vehicle's possible maneuvers.
 
 Choose one:
 
 - requires prediction
 - does not require prediction
 - uncertain
+
+An object may require prediction even if its current motion appears
+steady or predictable.
+
+Mark "requires prediction" when the object's near-term future position
+or state could affect evaluation of ego speed, path, following distance,
+or maneuver safety.
+
+Mark "does not require prediction" only when the object's future position
+or state is not needed for near-term ego planning based on the current
+observations.
+
+Mark "uncertain" when the available observations are insufficient to
+decide whether prediction is needed.
 
 Give one short reason based only on the current observations.
 
@@ -114,5 +130,5 @@ A9:
 3.
 (repeat for every predicted object)
 
-PREDICTION_SUMMARY:
-<One objective paragraph summarizing the predicted behaviour of the relevant objects over the next 1.5 seconds. Describe only the predicted object behaviour and associated uncertainty. Do not assess conflicts with the ego vehicle and do not recommend any driving action.>
+PROJECTION_SUMMARY:
+<One objective paragraph summarizing the projected behaviour of the relevant objects over the next 1.5 seconds. Describe only the predicted object behaviour and associated uncertainty. Do not assess conflicts with the ego vehicle and do not recommend any driving action.>

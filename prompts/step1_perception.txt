@@ -1,111 +1,325 @@
-Answer the following questions using only directly observable evidence from the images unless the question explicitly refers to the ego information.
+You are given four sequential images of the same driving scene:
+t-3, t-2, t-1, and t0.
 
-- Do not infer object intentions or future behaviour.
-- If an observation is uncertain, write "uncertain" rather than guessing.
-- If an object is not visible in a frame, write "not visible."
+Use ONLY visible information from these images.
 
-Q1. What are the relevant dynamic objects in the scene?
+Treat t0 as the PRIMARY reference frame and current decision point.
+Use t-3, t-2, and t-1 only as supporting temporal evidence.
 
-List at most five dynamic objects that may affect the ego vehicle within the next few seconds.
+Q1. What are the relevant traffic-related objects in the scene?
 
-Group nearby objects of the same type into a single entry.
+A relevant traffic-related object is a visible road user or traffic-control
+object whose presence, position, motion, or state could reasonably need to
+be considered by later prediction or planning.
+
+Include visible:
+
+- pedestrians and other vulnerable road users,
+- cyclists,
+- motorcycles,
+- vehicles,
+- traffic lights,
+- traffic signs,
+- and other traffic-related objects whose state or presence may affect driving.
+
+An object may still be relevant even if it is currently stationary.
+Do not require observed motion or an immediate conflict for inclusion.
+
+Do not include unrelated static environmental objects such as buildings,
+trees, ordinary poles, road markings, sidewalks, or barriers.
+
+Traffic lights and traffic signs are exceptions: include them when visible.
+
+
+OBJECT IDENTIFICATION PROCEDURE
+
+- Treat t0 as the primary frame for object inclusion and current scene
+  description.
+
+- Inspect the complete t0 frame and identify all visible traffic-related
+  objects from the categories above.
+
+- Do not stop after identifying only the most visually salient objects.
+
+- Objects that first appear at t0 must still be included.
+
+- Use t-1, t-2, and t-3 only as supporting evidence to:
+  - confirm object identity,
+  - observe previous position,
+  - determine observed motion,
+  - or identify state changes leading up to t0.
+
+- Do not let an earlier frame override what is currently visible at t0.
+
+- Include an object if its visible presence, position, motion, or state
+  could reasonably need to be considered by later prediction or planning.
+
+- Do not exclude an object only because it is:
+  - stationary,
+  - moving slowly,
+  - outside the ego lane,
+  - far from the ego vehicle,
+  - not currently in conflict,
+  - or moving predictably.
+
+- When uncertain whether a visible traffic-related object should be kept,
+  prefer to include it in A1 and let later steps determine its importance.
+
+- Determine the distinct physical objects BEFORE assigning any descriptive
+  features to them.
+
+- The same physical object appearing in multiple frames is ONE object.
+
+- Different descriptions or visible features of the same physical object
+  do NOT make it a new object.
+
+- Identify the physical object first; assign its descriptor only after
+  the object has been identified.
+
+- A color, clothing feature, carried item, motion, or state does NOT by
+  itself create a new object.
+
+- Do not create a separate object for each frame.
+
+- Group multiple objects only when they are:
+  - the same type,
+  - spatially close,
+  - in the same local area,
+  - and equivalent from the ego vehicle's planning perspective.
+
+- Count the resulting unique objects or groups.
+
+- Output exactly that many entries and STOP.
+
+
+OBJECT DESCRIPTION RULE
+
+- For each object in A1, describe the object using only visible
+  identifying features that help distinguish it from other objects of the
+  same type.
+
+- Assign the descriptor only AFTER the physical object has already been
+  identified.
+
+- Use only ONE concise distinguishing descriptor per object when possible.
+
+- Do not create additional objects from additional possible descriptors
+  of the same physical object.
+
+- Do not use action or state words as the identifying descriptor in A1,
+  such as walking, running, standing, crossing, stopping, turning, or parked.
+
+- A visible descriptor is only used to distinguish an already identified
+  object; it must NOT be used to create an additional object.
+
+- Use visible characteristics such as:
+  - color,
+  - shape or subtype,
+  - clothing or external appearance,
+  - carried or attached visible item,
+  - relative size,
+  - distinctive visible feature,
+  - or spatial distinction when appearance alone is insufficient.
+
+- For traffic lights, include the currently visible signal color or state
+  when clearly visible.
+
+- For traffic signs, describe the visible sign type or symbol only when it
+  can be determined reliably.
+
+- Do not describe inferred behaviour, intention, or role in A1.
+
+- A1 should identify WHAT the object is, not WHAT it is doing.
+
+- Motion and behaviour must be described only in Q3 and Q4.
+
+- If a distinguishing feature cannot be determined reliably, use the
+  object type together with a spatial descriptor.
+
+- Do not invent a distinguishing feature or traffic-control state that is
+  not clearly visible.
+
+
+OBJECT ID RULE
+
+- Assign IDs only AFTER the final set of unique objects or object groups
+  has been determined.
+
+- Assign a unique type-based ID to each object or object group.
+
+- Use:
+  - P1, P2, P3, ... for pedestrians
+  - V1, V2, V3, ... for vehicles
+  - C1, C2, C3, ... for cyclists
+  - M1, M2, M3, ... for motorcycles
+  - TL1, TL2, TL3, ... for traffic lights
+  - TS1, TS2, TS3, ... for traffic signs
+  - O1, O2, O3, ... for other traffic-related objects
+
+- Number IDs consecutively within each object type with no skipped numbers.
+
+- Do not use generic numeric IDs such as 1, 2, 3 or [1], [2], [3].
+
+- Use a consistent ID for the same physical object throughout A1-A4.
+
+- Do not use the same ID for different objects.
+
+- Do not assign a new ID to an object that has already been listed.
+
+
+UNIQUENESS RULE
+
+- Every entry must represent a different physical object or group.
+
+- Before adding a new entry, compare it with all previously listed entries.
+
+- If the proposed entry refers to the same physical object or group as a
+  previous entry, DO NOT add it again.
+
+- Different descriptions of the same physical object are NOT separate
+  objects.
+
+- Object uniqueness is determined by physical identity and position, not
+  by the number of possible descriptors.
+
+- Never output another entry for an object or group already listed.
+
+- If two proposed entries refer to the same type of object in the same
+  local area, merge them unless two visibly separate physical objects must
+  be distinguished for planning.
+
+
+LENGTH CONSTRAINT
+
+- There is no required minimum number of objects.
+
+- Do not continue the list after all visible traffic-related objects at t0
+  have been identified.
 
 Q2. Where is each object relative to the ego vehicle?
 
-Describe the current qualitative position of each object relative to the ego vehicle.
+Describe the current qualitative position of each object relative to the
+ego vehicle.
 
-Examples:
+Use the same object IDs as A1.
+Do not introduce new objects.
 
-close ahead
-far ahead
-left lane
-right lane
-left sidewalk
-right sidewalk
-junction
+Q3. Describe the observed motion and state of each object across the
+provided image sequence.
 
-Q3. Describe the observed state of each object in every available frame.
+For each object listed in A1, examine the same physical object across the
+available frames from t-3 to t0.
 
-For each object listed in A1, describe only what is observed in every available frame.
+Describe how the object's visible position, motion, or state changes over
+the observed sequence as a whole.
 
-Use only the timesteps provided in the image sequence.
-If the object is not visible in a frame, write "not visible."
-After listing the observations, report whether the object's observed state remained unchanged or changed based only on visible evidence.
+Use only visible evidence from the provided images.
+
+When describing motion:
+
+- compare the object's visible position across the sequence;
+- report the observed direction of movement when it can be determined;
+- an object may move even if it remains within the same general area;
+- if the object is visible only in part of the sequence, describe the
+  observed motion only over the frames in which it is visible;
+- if no visible displacement is observed, report "stationary";
+- if movement is visible but its direction cannot be determined reliably,
+  report "moving, direction unclear";
+- if motion cannot be determined reliably, report "motion unclear."
+
+Do not describe each timestep separately unless needed to explain the
+observed change.
 
 Do not infer future behaviour or object intentions.
 
-Q4. What is the current facing direction or movement direction of each object?
+Evaluate each object independently.
+Do not copy the motion description of one object to another unless it is
+independently supported by the images.
 
-Describe the current facing direction or movement direction based only on the images.
+Use the same object IDs as A1.
+Do not introduce new objects.
 
-Examples:
-- facing away
-- facing the ego vehicle
-- parallel to the road
-- moving left to right
-- moving right to left
+Q4. What is the current facing direction or movement direction of each
+object?
 
-Q5. Based only on the ego information above, describe the ego vehicle's current motion state.
+Describe the current facing direction or movement direction based only on
+the images.
 
-Use only the ego information provided in the header.
+Use the same object IDs as A1.
+Evaluate each object independently.
+Do not copy the direction of one object to another unless independently
+supported by visible evidence.
+
+Q5. Based only on the context headers, describe the ego vehicle's
+current motion state.
+
+Use only the ego information provided in the context header.
 
 Report:
+
 - whether the ego vehicle is moving or stationary;
 - its heading direction; and
-- its acceleration state only if explicitly available in the ego information.
-
-If acceleration cannot be determined from the provided information, write:
-- Acceleration: Unknown
+- its acceleration state only if explicitly available in the ego information by accessing ego vehicle trajectory relative to t0.
 
 OUTPUT FORMAT
-Q1: What are the relevant dynamic objects in the scene?
 
+Q1: What are the relevant dynamic objects in the scene?
 A1:
-1.
-2.
-3.
-4.
-5. <object type and location, or "none" if fewer than five objects>
+
+ID | object type + visible distinguishing descriptor
+
+...
+
+After each proposed entry, compare it with all previously listed entries.
+If it refers to the same physical object, DO NOT add it again.
+
+Each physical object or object group may appear exactly once.
+
+Total objects: number of unique entries
+
+STOP immediately after the final object.
 
 Q2: Where is each object relative to the ego vehicle?
-
 A2:
-1. <qualitative position>
-2.
-3. 
+
+[ID] | [location]
+
+...
+
 (repeat for every object in A1)
 
-Q3: Describe the observed state of each object in every available frame.
-
+Q3: Describe the observed motion and state of each object across the provided image sequence.
 A3:
 
-[<object name>]
+ID | observed change from earliest visible frame to t0 | observed motion trend
 
-t-X: <observed state or "not visible">
-t-Y: <observed state or "not visible">
-t0: <observed state or "not visible">
+P1 | ... | ...
+P2 | ... | ...
+V1 | ... | ...
 
-Observed change: <unchanged / describe the observed change>
+(repeat exactly once for every object in A1)
 
-(repeat for every object in A1 using only the available timesteps)
-
-Q4: What is the current facing direction or movement direction of each object?
-
+Q4: What is the current facing direction or movement direction of each
+object?
 A4:
-1. <facing or movement direction>
-2. 
-3. 
+
+[ID] | [current facing or movement direction]
+
+...
+
 (repeat for every object in A1)
 
 Q5: What is the ego vehicle's current motion state?
-
 A5:
-- Motion state: <moving / stationary>
-- Heading direction: <direction>
-- Acceleration: <accelerating / braking / neither / unknown>
+
+Motion state: <moving / stationary>
+Heading direction:
+Acceleration: <accelerating / braking / neither / unknown>
 
 PERCEPTION SUMMARY
 
-Provide one objective paragraph summarizing the currently observed scene based on A1–A5.
+Provide one objective paragraph summarizing the currently observed scene
+based on A1-A5.
 
+Do not introduce new objects.
 Do not predict future behaviour or recommend any driving action.
